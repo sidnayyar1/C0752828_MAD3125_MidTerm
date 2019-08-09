@@ -34,7 +34,6 @@ public class AdapterClass extends RecyclerView.Adapter {
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
     final MissionModel missionModel= arrayList.get(position);
 
-
     }
 
     @Override
@@ -44,12 +43,12 @@ public class AdapterClass extends RecyclerView.Adapter {
 
     public class MyViewHolder extends RecyclerView.ViewHolder{
 
-    ImageView image;
+    ImageView image1;
     TextView name;
     TextView launchYear;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-            image = (ImageView)itemView.findViewById(R.id.missileImage);
+            image1 = (ImageView)itemView.findViewById(R.id.missileImage);
             name = (TextView)itemView.findViewById(R.id.missionName);
             launchYear = (TextView)itemView.findViewById(R.id.launchYear);
         }
