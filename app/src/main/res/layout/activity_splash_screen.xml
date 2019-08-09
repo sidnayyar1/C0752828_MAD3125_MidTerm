@@ -7,14 +7,9 @@
     android:orientation="vertical"
     android:background="@color/Blue"
     tools:context=".SplashScreen">
-    <TextView
-        android:padding="50dp"
-        android:layout_marginTop="120dp"
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SplashScreen"
-        android:textSize="30dp"
-        android:textStyle="bold" />
 
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/missile"/>
 </LinearLayout>
