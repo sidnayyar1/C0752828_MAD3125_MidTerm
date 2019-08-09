@@ -14,7 +14,7 @@ import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
-public class AdapterClass extends RecyclerView.Adapter {
+public class AdapterClass extends RecyclerView.Adapter<AdapterClass.MyViewHolder> {
     Context context;
     ArrayList<MissionModel>arrayList;
     public AdapterClass(Context context,ArrayList<MissionModel>arrayList){
@@ -22,18 +22,19 @@ public class AdapterClass extends RecyclerView.Adapter {
         this.arrayList = arrayList;
     }
 
-
     @NonNull
     @Override
-    public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View ItemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.design,parent,false);
-        return new MyViewHolder(ItemView);
+    public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+       View ItemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.design,parent,false);
+       return new MyViewHolder(ItemView);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
-    final MissionModel missionModel= arrayList.get(position);
-
+    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
+        final MissionModel missionModel = arrayList.get(position);
+//        holder.image1.setImageResource(Integer.parseInt(String.valueOf(missionModel.getImage())));
+        holder.name.setText(missionModel.getName());
+        holder.launchYear.setText(missionModel.getLaunchYear());
     }
 
     @Override
