@@ -15,11 +15,11 @@ public class LoginActivity extends AppCompatActivity {
     EditText edtPassword;
     Button btnLogin;
     UserData u1 = new UserData("Sid@gmail.com","sid123");
-    UserData u2 = new UserData("Rohit@gmail.com","Rohit123");
-    UserData u3 = new UserData("Rahul@gmail.com","Rahul123");
-    UserData u4 = new UserData("vikas@gmail.com","vikas123");
-    UserData u5 = new UserData("viney@gmail.com","vinay123");
-    UserData userData[] = {u1,u2,u3,u4,u5};
+//    UserData u2 = new UserData("Rohit@gmail.com","Rohit123");
+//    UserData u3 = new UserData("Rahul@gmail.com","Rahul123");
+//    UserData u4 = new UserData("vikas@gmail.com","vikas123");
+//    UserData u5 = new UserData("viney@gmail.com","vinay123");
+    UserData userData[] = {u1};
 SharedPreferences sharedPreferences;
 
     @Override

@@ -35,6 +35,7 @@ public class AdapterClass extends RecyclerView.Adapter<AdapterClass.MyViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
+     final  MissionDetails missionDetails;
         final MissionModel missionModel = arrayList.get(position);
 //        holder.image1.setImageResource(Integer.parseInt(String.valueOf(missionModel.getImage())));
         Glide.with(context).load(missionModel.getImage()).into(holder.image1);
