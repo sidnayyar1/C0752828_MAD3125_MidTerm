@@ -10,6 +10,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+
 import org.w3c.dom.Text;
 
 import java.util.ArrayList;
@@ -33,6 +35,7 @@ public class AdapterClass extends RecyclerView.Adapter<AdapterClass.MyViewHolder
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         final MissionModel missionModel = arrayList.get(position);
 //        holder.image1.setImageResource(Integer.parseInt(String.valueOf(missionModel.getImage())));
+        Glide.with(context).load(missionModel.getImage()).into(holder.image1);
         holder.name.setText(missionModel.getName());
         holder.launchYear.setText(missionModel.getLaunchYear());
     }
