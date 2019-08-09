@@ -29,6 +29,7 @@ String image,name;
         Toast.makeText(getApplicationContext(),name,Toast.LENGTH_SHORT).show();
         //txtName.setText(name);
         Glide.with(this).load(image).into(missionImage);
+
     }
 
 }
