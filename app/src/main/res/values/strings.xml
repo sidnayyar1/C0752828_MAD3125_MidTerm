@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">C0752828_MAD3125_MidTerm</string>
+    <string name="Email">Enter Email</string>
+    <string name="Password">Enter Password</string>
 </resources>

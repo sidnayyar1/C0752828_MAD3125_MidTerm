@@ -21,20 +21,39 @@
         android:layout_width="match_parent"
         android:orientation="vertical"
         android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="#000"
+            android:hint="@string/Email"
+            android:layout_margin="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+
         <EditText
             android:layout_marginTop="50dp"
             android:id="@+id/edtEmail"
-            android:hint="Enter Email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="#000"
+            android:hint="@string/Password"
+            android:layout_margin="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
         <EditText
             android:layout_marginTop="20dp"
             android:id="@+id/edtPassword"
-            android:hint="Enter Password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
         </EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
     </LinearLayout>
 
     <LinearLayout

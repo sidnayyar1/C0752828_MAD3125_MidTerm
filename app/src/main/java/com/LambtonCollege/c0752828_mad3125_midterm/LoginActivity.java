@@ -41,7 +41,9 @@ SharedPreferences sharedPreferences;
                         Intent toLogin = new Intent(LoginActivity.this,HomeActivity.class);
                         startActivity(toLogin);
                     }else {
+
                         Toast.makeText(LoginActivity.this,"Incorrect email or password",Toast.LENGTH_SHORT).show();
+
                     }
                 }
             }
